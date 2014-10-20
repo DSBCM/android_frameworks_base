@@ -4054,6 +4054,149 @@ public final class Settings {
          */
         public static final String NAVIGATION_BAR_MENU_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
 
+        /**
+         * MediaScanner behavior on boot.
+         * 0 = enabled
+         * 1 = ask (notification)
+         * 2 = disabled
+         * @hide
+         */
+        public static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+
+        /**
+         * Whether or not to use the app sidebar
+         *
+         * @hide
+         */
+        public static final String APP_SIDEBAR_ENABLED = "app_sidebar_enabled";
+
+        /**
+         * User defined transparency level for sidebar
+         *
+         * @hide
+         */
+        public static final String APP_SIDEBAR_TRANSPARENCY = "app_sidebar_transparency";
+
+        /**
+         * Disable text labels for app sidebar items
+         *
+         * @hide
+         */
+        public static final String APP_SIDEBAR_DISABLE_LABELS = "app_sidebar_disable_labels";
+
+        /**
+         * Position of app sidebar
+         *
+         * @hide
+         */
+        public static final String APP_SIDEBAR_POSITION = "app_sidebar_position";
+
+        /**
+         * Width of the appbar trigger
+         *
+         * @hide
+         */
+        public static final String APP_SIDEBAR_TRIGGER_WIDTH = "app_sidebar_trigger_width";
+
+         /**
+          * Position of appbar sidebar
+          *
+          * @hide
+          */
+        public static final String APP_SIDEBAR_TRIGGER_TOP = "app_sidebar_trigger_top";
+
+        /**
+         * Height of the appbar trigger
+         *
+         * @hide
+         */
+        public static final String APP_SIDEBAR_TRIGGER_HEIGHT = "app_sidebar_trigger_height";
+
+        /**
+         * Whether to display the trigger region or not
+         *
+         * @hide
+         */
+        public static final String APP_SIDEBAR_SHOW_TRIGGER = "app_sidebar_show_trigger";
+
+        /**
+         * Holds the text for the Carrier label. An empty string
+         * will bring the default text back.
+         * @hide
+         */
+        public static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+
+        /**
+         * Should the non-intrsive incall ui be used
+         *
+         * @hide
+         */
+        public static final String NON_INTRUSIVE_INCALL = "non_intrusive_incall";
+
+        /**
+         * Battery bar height
+         *
+         * @hide
+         */
+        public static final String BATTERY_BAR_HEIGHT = "battery_bar_height";
+
+        /**
+         * Battery bar left color
+         *
+         * @hide
+         */
+        public static final String BATTERY_BAR_LEFT_COLOR = "battery_bar_left_color";
+
+        /**
+         * Battery bar right color
+         *
+         * @hide
+         */
+        public static final String BATTERY_BAR_RIGHT_COLOR = "battery_bar_right_color";
+
+        /**
+         * Whether the status bar is set to be colored dynamically
+         * 0 = disabled (default)
+         * 1 = enabled
+         * @hide
+         */
+        public static final String DYNAMIC_STATUS_BAR_STATE = "dynamic_status_bar_state";
+
+        /**
+         * Whether the navigation bar is set to be colored dynamically
+         * 0 = disabled (default)
+         * 1 = enabled
+         * @hide
+         */
+        public static final String DYNAMIC_NAVIGATION_BAR_STATE = "dynamic_navigation_bar_state";
+
+        /**
+         * Whether the dynamic system bars are set to have a gradient overlay
+         * 0 = disabled (default)
+         * 1 = enabled
+         * @hide
+         */
+        public static final String DYNAMIC_SYSTEM_BARS_GRADIENT_STATE =
+                "dynamic_system_bars_gradient_state";
+
+        /**
+         * Whether the dynamic status bar is set to have a (darkening) filter overlay
+         * 0 = disabled (default)
+         * 1 = enabled
+         * @hide
+         */
+        public static final String DYNAMIC_STATUS_BAR_FILTER_STATE =
+                "dynamic_status_bar_filter_state";
+
+        /**
+         * The frequency of dynamic status bar updates
+         * less than 0 = update once each -N seconds
+         * 0 = update once each second
+         * more than 0 = update N times each second
+         * default value: 2
+         * @hide
+         */
+        public static final String EXPERIMENTAL_DSB_FREQUENCY = "experimental_dsb_frequency";
     }
 
     /**
