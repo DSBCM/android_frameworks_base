@@ -330,8 +330,10 @@ public class NavigationBarView extends LinearLayout {
             (ImageView) (mCurrentView == null ? null : mCurrentView.findViewWithTag(NavbarEditor.NAVBAR_CONDITIONAL_MENU)),
             (ImageView) (mCurrentView == null ? null : mCurrentView.findViewWithTag(NavbarEditor.NAVBAR_ALWAYS_MENU)),
             (ImageView) (mCurrentView == null ? null : mCurrentView.findViewWithTag(NavbarEditor.NAVBAR_MENU_BIG)),
+            (ImageView) (mCurrentView == null ? null : mCurrentView.findViewWithTag(NavbarEditor.NAVBAR_SEARCH)),
             (ImageView) getSearchLight(),
-            (ImageView) getCameraButton()
+            (ImageView) getCameraButton(),
+            (ImageView) getApplicationWidgetButton()
         };
 
         final ArrayList<Animator> anims = new ArrayList<Animator>();
@@ -491,7 +493,7 @@ public class NavigationBarView extends LinearLayout {
 
     // shown when keyguard is visible and application widget button is available
     public View getApplicationWidgetButton() {
-        View v = mCurrentView.findViewById(R.id.application_widget_button);
+        View v = mCurrentView == null ? null : mCurrentView.findViewById(R.id.application_widget_button);
         if (v == null || mApplicationWidgetPackageName == null ||
                 mApplicationWidgetIcon == null) {
             return null;
